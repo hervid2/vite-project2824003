@@ -3,27 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../form.css">
     <title>Categorias</title>
   </head>
   <body>
     <div class="container">
-      <div id="title">
-        <h1>Formulario Categorías</h1>
-      </div>
 
       <div class="container__form">
+        <h3>Formulario Categorías</h3>
         <form id="form">
           <div class="nombre">
             <label for="nombre">nombre</label>
-            <input type="text" placeholder="nombre" />
+            <input type="text" placeholder="nombre"/>
           </div>
 
           <div class="descripcion">
             <label for="descripcion">descripción</label>
             <textarea name="descripcion" id="descripcion"></textarea>
           </div>
+          <button type="button" id="submit-button">Enviar</button>
         </form>
       </div>
+
+      <div id="table-container">
+        <h3>Tabla de Categorías</h3>
+        <table id="categorias-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nombre</th>
+              <th>Descripción</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Las filas se agregarán dinámicamente aquí -->
+          </tbody>
+        </table>
+      </div>
     </div>
+    <script src="../../components/table.js" type="module"></script>
   </body>
 </html>

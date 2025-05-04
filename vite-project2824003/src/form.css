@@ -1,0 +1,106 @@
+.container__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 30%; /* El formulario ocupa el 35% del ancho */
+  position: relative;
+  top: 0;
+  float: left; /* Ubica el formulario a la izquierda */
+  margin-right: 2rem; /* Espacio entre el formulario y la tabla */
+  margin-top: 2rem; /* Espacio superior adicional */
+}
+
+.container__form label {
+  font-weight: bold;
+  margin: 1rem;
+}
+
+.container__form input,
+.container__form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.container__form input:focus,
+.container__form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+/* Estilos para la tabla */
+#table-container {
+  float: right; /* Ubica la tabla a la derecha del formulario */
+  width: 60%; /* La tabla ocupa el resto del ancho disponible */
+  margin-top: 2rem; /* Espacio superior adicional */
+}
+
+#table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#table-container th,
+#table-container td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+#table-container th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:active {
+  background-color: #004085;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

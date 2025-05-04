@@ -10,8 +10,10 @@ body{
 }
 
 .container{
-    max-width: 1200px;
+    max-width: 80%;
     margin: 0 auto;
+    padding: 10px;
+    border-radius: 15px;
 }
 
 .header {
@@ -32,4 +34,12 @@ body{
    cursor: pointer;
    text-decoration: none;
    color: #202020;
+   font-weight: bold;
 }
+
+.menu__link:hover{
+    background-color: #908e8e;
+    border-radius: 11px;
+    transform: scale(1.1);
+}
+

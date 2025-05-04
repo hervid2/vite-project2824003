@@ -3,15 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../form.css" />
     <title>Productos</title>
   </head>
   <body>
     <div class="container">
-      <div id="title">
-        <h1>Formulario Productos</h1>
-      </div>
-
       <div class="container__form">
+        <h3>Formulario Productos</h3>
         <form id="form">
           <div class="nombre">
             <label for="nombre">Nombre</label>
@@ -32,8 +30,26 @@
             <label for="precio">Categoría</label>
             <input type="number">
           </div>
-
+          <button type="button" id="submit-button">Enviar</button>
         </form>
+      </div>
+
+      <div id="table-container">
+        <h3>Tabla de Productos</h3>
+        <table id="productos-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nombre</th>
+              <th>Descripción</th>
+              <th>Precio</th>
+              <th>Categoría</th>
+            </tr>
+          </thead>
+          <tbody class="tbody">
+            <!-- El cuerpo de la tabla se actualizará dinámicamente -->
+          </tbody>
+        </table>
       </div>
     </div>
   </body>
